@@ -3,12 +3,465 @@
     <title>Fact Jungle Hindi</title>
     <link href="https://desifactjungle.pages.dev/feed.xml" rel="self" />
     <link href="https://desifactjungle.pages.dev" />
-    <updated>2025-11-21T21:14:33+05:30</updated>
+    <updated>2025-11-22T00:10:13+05:30</updated>
     <author>
         <name>Mohan R</name>
     </author>
     <id>https://desifactjungle.pages.dev</id>
 
+    <entry>
+        <title>Ultimate Attendance Calculator (India) — Check Current %, Classes Needed &amp; Bunk Days</title>
+        <author>
+            <name>Mohan R</name>
+        </author>
+        <link href="https://desifactjungle.pages.dev/ultimate-attendance-calculator.html"/>
+        <id>https://desifactjungle.pages.dev/ultimate-attendance-calculator.html</id>
+            <category term="Tools / Generators"/>
+
+        <updated>2025-11-22T00:10:13+05:30</updated>
+            <summary type="html">
+                <![CDATA[
+                    { "@context":"https://schema.org", "@type":"WebApplication", "name":"Ultimate Attendance Calculator (India)", "url":"/attendance-calculator", "description":"Calculate current attendance %, classes needed to reach a target (default 75%), how many classes you can miss, predicted % with planned classes. English + Hindi.", "applicationCategory":"Education", "operatingSystem":"All", "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"} } Current % • Classes needed for target&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"Ultimate Attendance Calculator (India)",
+    "url":"/attendance-calculator",
+    "description":"Calculate current attendance %, classes needed to reach a target (default 75%), how many classes you can miss, predicted % with planned classes. English + Hindi.",
+    "applicationCategory":"Education",
+    "operatingSystem":"All",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
+  }
+  </script>
+</p>
+<div class="wrap">
+<div class="card">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+<div>
+<h1>Ultimate Attendance Calculator (India) — Option 3</h1>
+<p class="lead">Current % • Classes needed for target • Allowed bunk days • Predict with planned classes. Hindi toggle included.</p>
+</div>
+<div class="toggle"><label class="small">Language</label><select id="langSelect">
+<option value="en">English</option>
+<option value="hi">हिन्दी</option>
+</select></div>
+</div>
+<div class="grid" style="margin-top: 16px;">
+<div>
+<div class="inputs">
+<div><label id="lblTotal">Total classes held</label> <input id="total" type="number" min="0" value="60"></div>
+<div><label id="lblAttended">Classes attended</label> <input id="attended" type="number" min="0" value="42"></div>
+<div class="row">
+<div style="flex: 1;"><label id="lblRequired">Required percentage</label> <input id="required" type="number" min="0" max="100" value="75"></div>
+<div style="width: 120px;"><label id="lblPrecision">Decimal places</label><select id="precision">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+</select></div>
+</div>
+<div class="row">
+<div style="flex: 1;"><label id="lblFuture">Planned future classes</label> <input id="future" type="number" min="0" value="20"></div>
+<div style="width: 120px;"><label id="lblPlannedAbs">Planned absences</label> <input id="plannedAbs" type="number" min="0" value="2"></div>
+</div>
+<div style="display: flex; gap: 8px; align-items: center; margin-top: 6px;"><button class="btn">Calculate</button> <button class="secondary">Reset</button> <button class="secondary">Share</button></div>
+<div class="muted" style="margin-top: 8px;">Tip: Set the required % to your college rule (usually 75%) and adjust planned future classes for predictions.</div>
+</div>
+</div>
+<div>
+<div class="out">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+<div>
+<div id="outTitle" class="small">Current Attendance</div>
+<div id="curPercent" class="big">0%</div>
+<div id="statusText" class="muted">---</div>
+</div>
+</div>
+<div class="kpi" style="margin-top: 10px;">
+<div>
+<div class="small">Classes needed to reach target</div>
+<div id="classesNeeded" class="big">—</div>
+</div>
+<div>
+<div class="small">Classes you can miss now (without falling below target)</div>
+<div id="canMiss" class="big">—</div>
+</div>
+<div>
+<div class="small">Predicted % after planned classes</div>
+<div id="predicted" class="big">—</div>
+</div>
+<div>
+<div class="small">Predicted bunk allowance (future)</div>
+<div id="futureMiss" class="big">—</div>
+</div>
+</div>
+<div style="margin-top: 10px;"><canvas id="chart"></canvas></div>
+<footer>
+<div id="explain" class="muted">Explanation: This calculator assumes all inputs are for the same subject/course. Use total classes = classes conducted so far. Planned future classes are upcoming sessions you will or will not attend.</div>
+<div> </div>
+<div>
+<h2 data-start="918" data-end="984">⭐ Ultimate Attendance Calculator (India) — 75% Rule Explained</h2>
+<p data-start="985" data-end="1114">Colleges in India almost always follow the <strong data-start="1028" data-end="1051">75% attendance rule</strong>.<br data-start="1052" data-end="1055">But manually calculating attendance?<br data-start="1091" data-end="1094">Bro… total headache.</p>
+<p data-start="1116" data-end="1134">You keep thinking:</p>
+<ul data-start="1136" data-end="1315">
+<li data-start="1136" data-end="1160">
+<p data-start="1138" data-end="1160">“Kitna percent hua?”</p>
+</li>
+<li data-start="1161" data-end="1205">
+<p data-start="1163" data-end="1205">“Kitne classes aur attend karna padega?”</p>
+</li>
+<li data-start="1206" data-end="1263">
+<p data-start="1208" data-end="1263">“Agar thoda bunk karu toh percentage gir jayega kya?”</p>
+</li>
+<li data-start="1264" data-end="1315">
+<p data-start="1266" data-end="1315">“Future classes attend karne se % kitna badhega?”</p>
+</li>
+</ul>
+<p data-start="1317" data-end="1364">This calculator solves <em data-start="1340" data-end="1345">ALL</em> of that instantly.</p>
+<p data-start="1366" data-end="1377">Just enter:</p>
+<ul data-start="1378" data-end="1521">
+<li data-start="1378" data-end="1395">
+<p data-start="1380" data-end="1395">Total classes</p>
+</li>
+<li data-start="1396" data-end="1416">
+<p data-start="1398" data-end="1416">Attended classes</p>
+</li>
+<li data-start="1417" data-end="1464">
+<p data-start="1419" data-end="1464">Required percentage (most colleges use 75%)</p>
+</li>
+<li data-start="1465" data-end="1491">
+<p data-start="1467" data-end="1491">Future classes planned</p>
+</li>
+<li data-start="1492" data-end="1521">
+<p data-start="1494" data-end="1521">How many you plan to miss</p>
+</li>
+</ul>
+<p data-start="1523" data-end="1546">And it instantly shows:</p>
+<h3 data-start="1548" data-end="1581">✔ Your current attendance %</h3>
+<h3 data-start="1582" data-end="1620">✔ How many more classes you need</h3>
+<h3 data-start="1621" data-end="1668">✔ How many classes you can miss right now</h3>
+<h3 data-start="1669" data-end="1706">✔ Predicted future attendance %</h3>
+<h3 data-start="1707" data-end="1758">✔ How many future classes you can skip safely</h3>
+<p data-start="1760" data-end="1812">Basically… pura attendance ka future ka road map. 🚀</p>
+<hr data-start="1814" data-end="1817">
+<h2 data-start="1819" data-end="1863">🎯 How This Attendance Calculator Works</h2>
+<p data-start="1864" data-end="1907">This tool uses the standard Indian formula:</p>
+<p data-start="1909" data-end="1960"><strong data-start="1909" data-end="1960">Attendance % = (Attended ÷ Total Classes) × 100</strong></p>
+<p data-start="1962" data-end="1981">Then it calculates:</p>
+<h3 data-start="1983" data-end="2044"><strong data-start="1987" data-end="2042">1. How many classes you need to reach your target %</strong></h3>
+<p data-start="2045" data-end="2098">Most students want <strong data-start="2064" data-end="2071">75%</strong>, but you can set any goal.</p>
+<h3 data-start="2100" data-end="2149"><strong data-start="2104" data-end="2147">2. How many classes you can safely miss</strong></h3>
+<p data-start="2150" data-end="2302">If your current attendance is above the requirement,<br data-start="2202" data-end="2205">the calculator tells you the exact number of bunks you can take without falling below the target.</p>
+<h3 data-start="2304" data-end="2358"><strong data-start="2308" data-end="2356">3. Predicted percentage after future classes</strong></h3>
+<p data-start="2359" data-end="2365">Enter:</p>
+<ul data-start="2366" data-end="2432">
+<li data-start="2366" data-end="2402">
+<p data-start="2368" data-end="2402">How many classes are coming soon</p>
+</li>
+<li data-start="2403" data-end="2432">
+<p data-start="2405" data-end="2432">How many you plan to miss</p>
+</li>
+</ul>
+<p data-start="2434" data-end="2474">It predicts your exact final attendance.</p>
+<h3 data-start="2476" data-end="2510"><strong data-start="2480" data-end="2508">4. Future bunk allowance</strong></h3>
+<p data-start="2511" data-end="2520">Based on:</p>
+<ul data-start="2521" data-end="2584">
+<li data-start="2521" data-end="2543">
+<p data-start="2523" data-end="2543">Current attendance</p>
+</li>
+<li data-start="2544" data-end="2562">
+<p data-start="2546" data-end="2562">Future classes</p>
+</li>
+<li data-start="2563" data-end="2584">
+<p data-start="2565" data-end="2584">Target percentage</p>
+</li>
+</ul>
+<p data-start="2586" data-end="2645">It calculates how many classes you <em data-start="2621" data-end="2637">can still miss</em> safely.</p>
+<p data-start="2647" data-end="2720">This is why this is the <strong data-start="2671" data-end="2719">most advanced attendance calculator in India</strong>.</p>
+<hr data-start="2722" data-end="2725">
+<h2 data-start="2727" data-end="2763">📘 Example (Simple Explanation)</h2>
+<p data-start="2764" data-end="2772">Imagine:</p>
+<ul data-start="2774" data-end="2830">
+<li data-start="2774" data-end="2795">
+<p data-start="2776" data-end="2795">Total classes: 60</p>
+</li>
+<li data-start="2796" data-end="2812">
+<p data-start="2798" data-end="2812">Attended: 42</p>
+</li>
+<li data-start="2813" data-end="2830">
+<p data-start="2815" data-end="2830">Required: 75%</p>
+</li>
+</ul>
+<p data-start="2832" data-end="2860">Current attendance = <strong data-start="2853" data-end="2860">70%</strong></p>
+<p data-start="2862" data-end="2890">So the calculator tells you:</p>
+<ul data-start="2892" data-end="3058">
+<li data-start="2892" data-end="2941">
+<p data-start="2894" data-end="2941">How many classes you must attend to reach 75%</p>
+</li>
+<li data-start="2942" data-end="2971">
+<p data-start="2944" data-end="2971">How many you can miss now</p>
+</li>
+<li data-start="2972" data-end="3028">
+<p data-start="2974" data-end="3028">What your predicted % will be after upcoming classes</p>
+</li>
+<li data-start="3029" data-end="3058">
+<p data-start="3031" data-end="3058">Your final bunk allowance</p>
+</li>
+</ul>
+<p data-start="3060" data-end="3094">No more guessing. No more tension.</p>
+<hr data-start="3096" data-end="3099">
+<h2 data-start="3101" data-end="3152">🇮🇳 Why This Tool Is Made for Indian Students</h2>
+<p data-start="3153" data-end="3187">Indian colleges have strict rules:</p>
+<ul data-start="3189" data-end="3318">
+<li data-start="3189" data-end="3215">
+<p data-start="3191" data-end="3215">75% minimum attendance</p>
+</li>
+<li data-start="3216" data-end="3234">
+<p data-start="3218" data-end="3234">Shortage lists</p>
+</li>
+<li data-start="3235" data-end="3274">
+<p data-start="3237" data-end="3274">Internal marks linked to attendance</p>
+</li>
+<li data-start="3275" data-end="3318">
+<p data-start="3277" data-end="3318">Sometimes detention if shortage is high</p>
+</li>
+</ul>
+<p data-start="3320" data-end="3348">This calculator understands:</p>
+<p data-start="3350" data-end="3449">✔ 75% rule<br data-start="3360" data-end="3363">✔ Shortage logic<br data-start="3379" data-end="3382">✔ Future class prediction<br data-start="3407" data-end="3410">✔ Realistic Indian attendance pattern</p>
+<p data-start="3451" data-end="3496">Most foreign calculators don’t support these.</p>
+<hr data-start="3498" data-end="3501">
+<h2 data-start="3503" data-end="3550">🤝 Who Can Use This Attendance Calculator?</h2>
+<ul data-start="3551" data-end="3746">
+<li data-start="3551" data-end="3583">
+<p data-start="3553" data-end="3583">BTech / Engineering students</p>
+</li>
+<li data-start="3584" data-end="3603">
+<p data-start="3586" data-end="3603">Degree colleges</p>
+</li>
+<li data-start="3604" data-end="3631">
+<p data-start="3606" data-end="3631">MBBS / Nursing students</p>
+</li>
+<li data-start="3632" data-end="3654">
+<p data-start="3634" data-end="3654">PU/Junior colleges</p>
+</li>
+<li data-start="3655" data-end="3674">
+<p data-start="3657" data-end="3674">School students</p>
+</li>
+<li data-start="3675" data-end="3705">
+<p data-start="3677" data-end="3705">Coaching &amp; tuition batches</p>
+</li>
+<li data-start="3706" data-end="3746">
+<p data-start="3708" data-end="3746">Teachers tracking student attendance</p>
+</li>
+</ul>
+<p data-start="3748" data-end="3805">Basically… <strong data-start="3759" data-end="3805">everyone who needs to maintain attendance.</strong></p>
+<hr data-start="3807" data-end="3810">
+<h2 data-start="3812" data-end="3855">🧠 Tips to Increase Attendance Quickly</h2>
+<ul data-start="3856" data-end="4083">
+<li data-start="3856" data-end="3917">
+<p data-start="3858" data-end="3917">Never miss labs/practicals (easy marks + easy attendance)</p>
+</li>
+<li data-start="3918" data-end="3971">
+<p data-start="3920" data-end="3971">Attend 4–5 classes in a row to recover percentage</p>
+</li>
+<li data-start="3972" data-end="4029">
+<p data-start="3974" data-end="4029">Sundays is rest, not recovery—plan your bunk strategy</p>
+</li>
+<li data-start="4030" data-end="4083">
+<p data-start="4032" data-end="4083">Use this calculator daily to track safe bunk days</p>
+</li>
+</ul>
+<p data-start="4085" data-end="4135">Small, consistent attendance → no shortage issues.</p>
+<hr data-start="4137" data-end="4140">
+<h2 data-start="4142" data-end="4160">📌 Final Note</h2>
+<p data-start="4161" data-end="4301">This is a tool made specially for the Indian attendance system.<br data-start="4224" data-end="4227">Use it to plan, predict, and maintain your attendance with zero confusion.</p>
+</div>
+<div> </div>
+</footer></div>
+</div>
+</div>
+</div>
+</div>
+<p>
+<script>
+    // Simple I18N
+    const texts = {
+      en: {
+        total: 'Total classes held',
+        attended: 'Classes attended',
+        required: 'Required percentage',
+        future: 'Planned future classes',
+        plannedAbs: 'Planned absences',
+        precision: 'Decimal places',
+        curTitle: 'Current Attendance',
+        explain: 'Explanation: This calculator assumes all inputs are for the same subject/course. Use total classes = classes conducted so far. Planned future classes are upcoming sessions you will or will not attend.'
+      },
+      hi: {
+        total: 'कुल कक्षाएँ हुई',
+        attended: 'हाज़िरी (अटेंडिड) कक्षाएँ',
+        required: 'आवश्यक प्रतिशत',
+        future: 'आगामी कक्षाएँ (योजना)',
+        plannedAbs: 'योजना अनुसार अनुपस्थिति',
+        precision: 'दशमलव स्थान',
+        curTitle: 'वर्तमान हाज़िरी',
+        explain: 'विवरण: यह कैलकुलेटर एक ही विषय/कोर्स के इनपुट मानता है। कुल कक्षाएँ = अब तक हुई कक्षाएँ। आगामी कक्षाएँ उन सत्रों को दर्शाती हैं जिनमें आप हिस्सा लेंगे या नहीं।'
+      }
+    };
+
+    function setLang(){
+      const l = document.getElementById('langSelect').value;
+      const t = texts[l];
+      document.getElementById('lblTotal').innerText = t.total;
+      document.getElementById('lblAttended').innerText = t.attended;
+      document.getElementById('lblRequired').innerText = t.required;
+      document.getElementById('lblFuture').innerText = t.future;
+      document.getElementById('lblPlannedAbs').innerText = t.plannedAbs;
+      document.getElementById('lblPrecision').innerText = t.precision;
+      document.getElementById('outTitle').innerText = t.curTitle;
+      document.getElementById('explain').innerText = t.explain;
+    }
+
+    // Chart drawing (simple bar-like projection)
+    const canvas = document.getElementById('chart');
+    const ctx = canvas.getContext('2d');
+    function drawChart(currentPct, predictedPct){
+      const w = canvas.width = canvas.clientWidth * devicePixelRatio;
+      const h = canvas.height = canvas.clientHeight * devicePixelRatio;
+      ctx.clearRect(0,0,w,h);
+      const pad = 18*devicePixelRatio;
+      const barW = (w - pad*2)/3;
+      // background
+      ctx.fillStyle = 'rgba(255,255,255,0.03)';
+      ctx.fillRect(pad, pad, w-pad*2, h-pad*2);
+
+      // current bar
+      const curH = (h - pad*3) * (currentPct/100);
+      ctx.fillStyle = '#06b6d4';
+      ctx.fillRect(pad + 10*devicePixelRatio, h-pad- curH, barW, curH);
+      // predicted bar
+      const predH = (h - pad*3) * (predictedPct/100);
+      ctx.fillStyle = '#7c3aed';
+      ctx.fillRect(pad + 10*devicePixelRatio + barW + 20*devicePixelRatio, h-pad- predH, barW, predH);
+
+      // labels
+      ctx.fillStyle = 'rgba(230,238,246,0.9)';
+      ctx.font = `${12*devicePixelRatio}px Inter, Roboto`;
+      ctx.fillText('Current', pad + 10*devicePixelRatio, h - 6*devicePixelRatio);
+      ctx.fillText('Predicted', pad + 10*devicePixelRatio + barW + 20*devicePixelRatio, h - 6*devicePixelRatio);
+    }
+
+    function clamp(v,min,max){return Math.max(min,Math.min(max,v))}
+
+    function calculate(){
+      const total = Number(document.getElementById('total').value || 0);
+      const attended = Number(document.getElementById('attended').value || 0);
+      const required = clamp(Number(document.getElementById('required').value || 75),0,100);
+      const future = Number(document.getElementById('future').value || 0);
+      const plannedAbs = Number(document.getElementById('plannedAbs').value || 0);
+      const precision = Number(document.getElementById('precision').value || 0);
+
+      if(total <= 0){alert('Total classes must be > 0');return}
+      if(attended < 0){alert('Attended cannot be negative');return}
+
+      const curPct = (attended/total)*100;
+      // How many classes needed from now on (assuming all future classes you attend) to reach required
+      // Solve for x: (attended + x) / (total + x) >= required/100
+      // (attended + x) >= r*(total + x) => attended + x >= r*total + r*x => x - r*x >= r*total - attended => x*(1-r) >= r*total - attended
+      const r = required/100;
+      let classesNeeded = null;
+      if(attended/total >= r){
+        classesNeeded = 0;
+      } else {
+        const denom = (1 - r);
+        if(denom <= 0){ classesNeeded = null; } else {
+          classesNeeded = Math.ceil((r*total - attended) / denom);
+        }
+      }
+
+      // How many classes you can miss now without falling below target
+      // i = number of misses allowed where (attended)/(total + i) >= r  -> attended >= r*(total + i) -> i <= (attended - r*total)/r
+      let canMiss = null;
+      const numerator = (attended - r*total);
+      if(numerator <= 0){ canMiss = 0; } else { canMiss = Math.floor(numerator / r); }
+
+      // Predicted % after planned future classes (assuming you attend future - plannedAbs)
+      const futureAttend = Math.max(0, future - plannedAbs);
+      const predictedPct = ((attended + futureAttend) / (total + future)) * 100;
+
+      // Future miss allowance - how many of the future classes you can miss while still meeting target
+      // Find m such that (attended + (future - m)) / (total + future) >= r  -> attended + future - m >= r*(total + future) -> m <= attended + future - r*(total + future)
+      let futureMiss = Math.floor(attended + future - r*(total + future));
+      if(futureMiss < 0) futureMiss = 0;
+
+      // Update UI
+      const p = (v)=>Number.isFinite(v)?v.toFixed(precision):'—';
+      document.getElementById('curPercent').innerText = `${(curPct).toFixed(precision)}%`;
+      document.getElementById('classesNeeded').innerText = classesNeeded === null ? '—' : classesNeeded;
+      document.getElementById('canMiss').innerText = canMiss === null ? '—' : canMiss;
+      document.getElementById('predicted').innerText = `${predictedPct.toFixed(precision)}%`;
+      document.getElementById('futureMiss').innerText = futureMiss;
+
+      const status = (curPct >= required) ? 'On track ✅' : 'Below target ⚠️';
+      document.getElementById('statusText').innerText = status;
+
+      drawChart(clamp(curPct,0,100), clamp(predictedPct,0,100));
+
+      // Update share-able hash
+      const params = new URLSearchParams({t:total,a:attended,r:required,f:future,p:plannedAbs,pr:precision,lang:document.getElementById('langSelect').value});
+      history.replaceState(null,'', '?'+params.toString());
+    }
+
+    function resetInputs(){
+      document.getElementById('total').value = 60;
+      document.getElementById('attended').value = 42;
+      document.getElementById('required').value = 75;
+      document.getElementById('future').value = 20;
+      document.getElementById('plannedAbs').value = 2;
+      document.getElementById('precision').value = 0;
+      document.getElementById('langSelect').value = 'en';
+      setLang();
+      calculate();
+    }
+
+    function shareResult(){
+      const url = location.origin + location.pathname + location.search;
+      if(navigator.share){
+        navigator.share({title:'Attendance Calculator result',text:'Check my attendance prediction',url});
+      } else {
+        prompt('Share this link', url);
+      }
+    }
+
+    // Load from query params if available
+    function loadFromQuery(){
+      const q = Object.fromEntries(new URLSearchParams(location.search));
+      if(q.t) document.getElementById('total').value = q.t;
+      if(q.a) document.getElementById('attended').value = q.a;
+      if(q.r) document.getElementById('required').value = q.r;
+      if(q.f) document.getElementById('future').value = q.f;
+      if(q.p) document.getElementById('plannedAbs').value = q.p;
+      if(q.pr) document.getElementById('precision').value = q.pr;
+      if(q.lang) document.getElementById('langSelect').value = q.lang;
+    }
+
+    // Responsive chart redraw
+    window.addEventListener('resize', ()=>{ calculate(); });
+
+    // Init
+    loadFromQuery();
+    setLang();
+    calculate();
+  </script>
+</p>
+content
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Gaay Ka Doodh Badhane Ka Best Tarika Real Farmer Guide (2025 India)</title>
         <author>
@@ -1826,114 +2279,6 @@
   ]
 }
 </script>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Eagle Kya Khata Hai? — Eagle Food &amp; Diet in Hindi</title>
-        <author>
-            <name>Mohan R</name>
-        </author>
-        <link href="https://desifactjungle.pages.dev/eagle-kya-khata-hai-eagle-food-and-diet-in-hindi.html"/>
-        <id>https://desifactjungle.pages.dev/eagle-kya-khata-hai-eagle-food-and-diet-in-hindi.html</id>
-            <category term="Animals Kya Khate Hain"/>
-
-        <updated>2025-11-19T23:08:09+05:30</updated>
-            <summary type="html">
-                <![CDATA[
-                    🦅 “Eagle Kya Khata Hai?” — Eagle Food &amp; Diet in Hindi (Animals Kya Khate Hain Category) Eagle (बाज़) मांसाहारी पक्षी है और उसका भोजन मुख्य रूप से छोटे जीवों पर आधारित होता है। Eagle का diet शामिल होता है: छोटे पक्षी मछलियाँ छोटे स्तनधारी&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <h1 data-start="282" data-end="344">🦅 <strong data-start="287" data-end="342">“Eagle Kya Khata Hai?” — Eagle Food &amp; Diet in Hindi</strong></h1>
-<p data-start="345" data-end="380"><em data-start="345" data-end="380">(Animals Kya Khate Hain Category)</em></p>
-<hr data-start="382" data-end="385">
-<h1 class="align-right" data-start="387" data-end="428">⭐ <strong data-start="391" data-end="426">Eagle Kya Khata Hai? (In Hindi)</strong></h1>
-<p data-start="429" data-end="520"><strong data-start="429" data-end="464">Eagle (बाज़) मांसाहारी पक्षी है</strong> और उसका भोजन मुख्य रूप से छोटे जीवों पर आधारित होता है।</p>
-<p data-start="522" data-end="550">Eagle का diet शामिल होता है:</p>
-<ul data-start="552" data-end="641">
-<li data-start="552" data-end="566">
-<p data-start="554" data-end="566">छोटे पक्षी</p>
-</li>
-<li data-start="567" data-end="578">
-<p data-start="569" data-end="578">मछलियाँ</p>
-</li>
-<li data-start="579" data-end="615">
-<p data-start="581" data-end="615">छोटे स्तनधारी (जैसे चूहा, खरगोश)</p>
-</li>
-<li data-start="616" data-end="624">
-<p data-start="618" data-end="624">सांप</p>
-</li>
-<li data-start="625" data-end="632">
-<p data-start="627" data-end="632">कीट</p>
-</li>
-<li data-start="633" data-end="641">
-<p data-start="635" data-end="641">मेढक</p>
-</li>
-</ul>
-<hr data-start="643" data-end="646">
-<h1 data-start="648" data-end="692">🌟 <strong data-start="653" data-end="692">Eagle क्या खाता है? (Detailed List)</strong></h1>
-<ol data-start="694" data-end="1133">
-<li data-start="694" data-end="762">
-<p data-start="697" data-end="762"><strong data-start="697" data-end="712">Fish (मछली)</strong><br data-start="712" data-end="715">— Sea eagle और Bald eagle का favourite food.</p>
-</li>
-<li data-start="764" data-end="834">
-<p data-start="767" data-end="834"><strong data-start="767" data-end="801">Rodents (किरपटे/छोटे स्तनधारी)</strong><br data-start="801" data-end="804">— चूहे, गिलहरी, छोटे खरगोश।</p>
-</li>
-<li data-start="836" data-end="907">
-<p data-start="839" data-end="907"><strong data-start="839" data-end="856">Snakes (साँप)</strong><br data-start="856" data-end="859">— कई eagle snake-hunting में expert होते हैं।</p>
-</li>
-<li data-start="909" data-end="974">
-<p data-start="912" data-end="974"><strong data-start="912" data-end="940">Small birds (छोटे पक्षी)</strong><br data-start="940" data-end="943">— Sparrow, dove, pigeon आदि।</p>
-</li>
-<li data-start="976" data-end="1036">
-<p data-start="979" data-end="1036"><strong data-start="979" data-end="1000">Reptiles (सरीसृप)</strong><br data-start="1000" data-end="1003">— मेढक, छिपकली, छोटे reptiles।</p>
-</li>
-<li data-start="1038" data-end="1133">
-<p data-start="1041" data-end="1133"><strong data-start="1041" data-end="1070">Carrion (मृत पशु का मांस)</strong><br data-start="1070" data-end="1073">— Dead animals भी खाते हैं, specially जब food कम होता है।</p>
-</li>
-</ol>
-<hr data-start="1135" data-end="1138">
-<h1 data-start="1140" data-end="1183">⭐ <strong data-start="1144" data-end="1181">Baby Eagle (Eaglet) क्या खाता है?</strong></h1>
-<p data-start="1184" data-end="1217">Baby eagle को parents खिलाते हैं:</p>
-<ul data-start="1219" data-end="1299">
-<li data-start="1219" data-end="1242">
-<p data-start="1221" data-end="1242">छोटे pieces of meat</p>
-</li>
-<li data-start="1243" data-end="1259">
-<p data-start="1245" data-end="1259">छोटी मछलियाँ</p>
-</li>
-<li data-start="1260" data-end="1267">
-<p data-start="1262" data-end="1267">कीट</p>
-</li>
-<li data-start="1268" data-end="1299">
-<p data-start="1270" data-end="1299">छोटे पक्षियों के नरम हिस्से</p>
-</li>
-</ul>
-<hr data-start="1301" data-end="1304">
-<h1 data-start="1306" data-end="1341">⭐ <strong data-start="1310" data-end="1339">Eagle कैसे शिकार करता है?</strong></h1>
-<ul data-start="1342" data-end="1481">
-<li data-start="1342" data-end="1380">
-<p data-start="1344" data-end="1380">30–50 किलोमीटर प्रति घंटे की speed</p>
-</li>
-<li data-start="1381" data-end="1426">
-<p data-start="1383" data-end="1426">Ultra-sharp vision (Human se 4–5x better)</p>
-</li>
-<li data-start="1427" data-end="1452">
-<p data-start="1429" data-end="1452">Strong claws (talons)</p>
-</li>
-<li data-start="1453" data-end="1481">
-<p data-start="1455" data-end="1481">Sky से नीचे गिरकर attack</p>
-</li>
-</ul>
-<p data-start="1483" data-end="1533">Isi wajah se eagle को “Sky Predator” bola जाता है.</p>
-<hr data-start="1535" data-end="1538">
-<h1 data-start="1540" data-end="1582">⭐ <strong data-start="1544" data-end="1580">Eagle Carnivore क्यों कहलाता है?</strong></h1>
-<p data-start="1583" data-end="1667">क्योंकि eagle केवल मांस खाता है —<br data-start="1616" data-end="1619">plants, fruits, grains <em data-start="1642" data-end="1666">बहुत कम या बिलकुल नहीं</em>।</p>
-<hr data-start="1669" data-end="1672">
-<h1 data-start="1674" data-end="1712">⭐ <strong data-start="1678" data-end="1710">Conclusion </strong></h1>
-<p data-start="1713" data-end="1846"><strong data-start="1713" data-end="1801">Eagle एक powerful carnivore bird है जो मछली, चूहे, साँप और छोटे पक्षियों को खाता है।</strong><br data-start="1801" data-end="1804">इसकी diet पूरी तरह मांस पर आधारित होती है।</p>
             ]]>
         </content>
     </entry>
