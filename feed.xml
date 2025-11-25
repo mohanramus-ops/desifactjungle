@@ -3,12 +3,70 @@
     <title>Fact Jungle Hindi</title>
     <link href="https://desifactjungle.pages.dev/feed.xml" rel="self" />
     <link href="https://desifactjungle.pages.dev" />
-    <updated>2025-11-24T21:11:05+05:30</updated>
+    <updated>2025-11-24T21:17:41+05:30</updated>
     <author>
         <name>Mohan R</name>
     </author>
     <id>https://desifactjungle.pages.dev</id>
 
+    <entry>
+        <title>attendance</title>
+        <author>
+            <name>Mohan R</name>
+        </author>
+        <link href="https://desifactjungle.pages.dev/attendance.html"/>
+        <id>https://desifactjungle.pages.dev/attendance.html</id>
+
+        <updated>2025-11-24T21:16:09+05:30</updated>
+            <summary type="html">
+                <![CDATA[
+                    Attendance Calculator ✅📚 Classes Attended Total Classes Conducted Target Attendance (%) Calculate Attendance —
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div id="attendance-calculator" style="max-width: 420px; margin: 24px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+<h2 style="font-size: 22px; margin-top: 0; margin-bottom: 16px; text-align: center;">Attendance Calculator ✅📚</h2>
+<label style="display: block; margin-bottom: 6px; font-size: 14px;">Classes Attended</label> <input id="attended" type="number" placeholder="e.g., 32" style="width: 100%; padding: 9px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 6px;"> <label style="display: block; margin-bottom: 6px; font-size: 14px;">Total Classes Conducted</label> <input id="total" type="number" placeholder="e.g., 45" style="width: 100%; padding: 9px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 6px;"> <label style="display: block; margin-bottom: 6px; font-size: 14px;">Target Attendance (%)</label> <input type="number" placeholder="e.g., 75" style="width: 100%; padding: 9px; margin-bottom: 16px; border: 1px solid #ccc; border-radius: 6px;"> <button id="calcAttendance" style="width: 100%; padding: 12px; border: none; border-radius: 6px; background: #008000; color: #fff; font-size: 16px; cursor: pointer;"> Calculate Attendance </button>
+<div id="attendance-result" style="margin-top: 20px; font-size: 18px; font-weight: 600; text-align: center;">—</div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("calcAttendance");
+  const result = document.getElementById("attendance-result");
+
+  btn.addEventListener("click", function () {
+    const attended = parseFloat(document.getElementById("attended").value);
+    const total = parseFloat(document.getElementById("total").value);
+    const target = parseFloat(document.getElementById("target").value);
+
+    if (isNaN(attended) || isNaN(total) || isNaN(target)) {
+      result.innerHTML = "⚠️ Numbers daal bhai.";
+      return;
+    }
+
+    if (attended < 0 || total <= 0 || attended > total || target <= 0 || target > 100) {
+      result.innerHTML = "⚠️ Invalid input — thoda sahi daal 😅";
+      return;
+    }
+
+    const current = (attended / total) * 100;
+    let html = `Current Attendance: <strong>${current.toFixed(2)}%</strong><br>`;
+
+    if (current >= target) {
+      html += `✅ Target achieved! Ab shaanti se bunk maar 😎`;
+    } else {
+      const required = Math.ceil((target * total - 100 * attended) / (100 - target));
+      html += `🎯 Required Classes: <strong>${required}</strong><br>Attend kar warna shortage lagegi 😭`;
+    }
+
+    result.innerHTML = html;
+  });
+});
+</script>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Attendance Calculator — Check Current &amp; Required Attendance Online</title>
         <author>
@@ -1431,128 +1489,6 @@ document.addEventListener("DOMContentLoaded", function () {
 <hr data-start="1630" data-end="1633">
 <h2 data-start="1635" data-end="1657">✅ <strong data-start="1640" data-end="1657">Short Summary</strong></h2>
 <p data-start="1658" data-end="1791">Gratitude का मतलब है — जीवन, लोगों और अनुभवों के लिए सच्चा आभार।<br data-start="1722" data-end="1725">ये आदत खुशियाँ बढ़ाती है, रिश्ते मजबूत करती है और तनाव कम करती है।</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Calculate your attendance %, required classes, safe bunk days &amp; predicted percentage.</title>
-        <author>
-            <name>Mohan R</name>
-        </author>
-        <link href="https://desifactjungle.pages.dev/attendance-calculator.html"/>
-        <id>https://desifactjungle.pages.dev/attendance-calculator.html</id>
-            <category term="Tools &amp; Calculators"/>
-
-        <updated>2025-11-22T13:49:09+05:30</updated>
-            <summary type="html">
-                <![CDATA[
-                    Ultimate Attendance Calculator (India) Calculate your attendance %, required classes, safe bunk days & predicted percentage. &lt;script&gt; document.addEventListener("DOMContentLoaded", function(){ function clamp(v,min,max){ return Math.max(min, Math.min(max, v)); } function runCalc(){ const total = Number(att_total.value || 0); const attended = Number(att_attended.value || 0); const req = Number(att_required.value ||&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div><div class="attend-wrap">
-  <div class="attend-card">
-    <h1>Ultimate Attendance Calculator (India)</h1>
-    <p class="attend-lead">
-      Calculate your attendance %, required classes, safe bunk days & predicted percentage.
-    </p>
-
-    <div class="attend-grid">
-
-      <div class="attend-inputs">
-        <label>Total classes held</label>
-        <input id="att_total" type="number" value="60">
-
-        <label>Classes attended</label>
-        <input id="att_attended" type="number" value="42">
-
-        <label>Required percentage</label>
-        <input id="att_required" type="number" value="75">
-
-        <label>Future classes planned</label>
-        <input id="att_future" type="number" value="20">
-
-        <label>Planned absences</label>
-        <input id="att_plannedAbs" type="number" value="2">
-
-        <div class="attend-buttons">
-          <button id="att_calcBtn" class="att-btn-primary">Calculate</button>
-          <button id="att_resetBtn" class="att-btn-secondary">Reset</button>
-        </div>
-      </div>
-
-      <div class="attend-output-card">
-        <div class="att-small-label">Current Attendance</div>
-        <div id="att_curPercent" class="att-big">0%</div>
-
-        <div class="att-small-label">Classes needed</div>
-        <div id="att_classesNeeded" class="att-kpi-value">—</div>
-
-        <div class="att-small-label">You can miss now</div>
-        <div id="att_canMiss" class="att-kpi-value">—</div>
-
-        <div class="att-small-label">Predicted attendance %</div>
-        <div id="att_predicted" class="att-kpi-value">—</div>
-
-        <div class="att-small-label">Future bunks allowed</div>
-        <div id="att_futureMiss" class="att-kpi-value">—</div>
-      </div>
-
-    </div>
-  </div>
-</div>
-</div>
-<pre class="line-numbers  language-html"><code>&lt;script&gt;
-document.addEventListener("DOMContentLoaded", function(){
-
-  function clamp(v,min,max){ return Math.max(min, Math.min(max, v)); }
-
-  function runCalc(){
-    const total = Number(att_total.value || 0);
-    const attended = Number(att_attended.value || 0);
-    const req = Number(att_required.value || 0)/100;
-    const future = Number(att_future.value || 0);
-    const abs = Number(att_plannedAbs.value || 0);
-
-    if(total &lt;= 0){ att_curPercent.textContent = "—"; return; }
-
-    const cur = (attended/total) * 100;
-    att_curPercent.textContent = cur.toFixed(1) + "%";
-
-    let need = Math.ceil((req*total - attended) / (1-req));
-    if(need &lt; 0) need = 0;
-    att_classesNeeded.textContent = need;
-
-    let miss = Math.floor((attended - req*total)/req);
-    if(miss &lt; 0) miss = 0;
-    att_canMiss.textContent = miss;
-
-    const after = ((attended + (future-abs)) / (total+future)) * 100;
-    att_predicted.textContent = after.toFixed(1) + "%";
-
-    let fut = Math.floor(attended + future - req*(total+future));
-    if(fut &lt; 0) fut = 0;
-    att_futureMiss.textContent = fut;
-  }
-
-  function resetCalc(){
-    att_total.value = 60;
-    att_attended.value = 42;
-    att_required.value = 75;
-    att_future.value = 20;
-    att_plannedAbs.value = 2;
-    runCalc();
-  }
-
-  att_calcBtn.addEventListener("click", runCalc);
-  att_resetBtn.addEventListener("click", resetCalc);
-
-  runCalc();
-});
-&lt;/script&gt;
-</code></pre>
-<pre class="line-numbers  language-html"><code></code></pre>
             ]]>
         </content>
     </entry>

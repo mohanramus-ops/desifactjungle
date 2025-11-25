@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://desifactjungle.pages.dev/attendance.html",
+            "url": "https://desifactjungle.pages.dev/attendance.html",
+            "title": "attendance",
+            "summary": "Attendance Calculator ✅📚 Classes Attended Total Classes Conducted Target Attendance (%) Calculate Attendance —",
+            "content_html": "<div id=\"attendance-calculator\" style=\"max-width: 420px; margin: 24px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\">\n<h2 style=\"font-size: 22px; margin-top: 0; margin-bottom: 16px; text-align: center;\">Attendance Calculator ✅📚</h2>\n<label style=\"display: block; margin-bottom: 6px; font-size: 14px;\">Classes Attended</label> <input id=\"attended\" type=\"number\" placeholder=\"e.g., 32\" style=\"width: 100%; padding: 9px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 6px;\"> <label style=\"display: block; margin-bottom: 6px; font-size: 14px;\">Total Classes Conducted</label> <input id=\"total\" type=\"number\" placeholder=\"e.g., 45\" style=\"width: 100%; padding: 9px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 6px;\"> <label style=\"display: block; margin-bottom: 6px; font-size: 14px;\">Target Attendance (%)</label> <input type=\"number\" placeholder=\"e.g., 75\" style=\"width: 100%; padding: 9px; margin-bottom: 16px; border: 1px solid #ccc; border-radius: 6px;\"> <button id=\"calcAttendance\" style=\"width: 100%; padding: 12px; border: none; border-radius: 6px; background: #008000; color: #fff; font-size: 16px; cursor: pointer;\"> Calculate Attendance </button>\n<div id=\"attendance-result\" style=\"margin-top: 20px; font-size: 18px; font-weight: 600; text-align: center;\">—</div>\n</div>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  const btn = document.getElementById(\"calcAttendance\");\n  const result = document.getElementById(\"attendance-result\");\n\n  btn.addEventListener(\"click\", function () {\n    const attended = parseFloat(document.getElementById(\"attended\").value);\n    const total = parseFloat(document.getElementById(\"total\").value);\n    const target = parseFloat(document.getElementById(\"target\").value);\n\n    if (isNaN(attended) || isNaN(total) || isNaN(target)) {\n      result.innerHTML = \"⚠️ Numbers daal bhai.\";\n      return;\n    }\n\n    if (attended < 0 || total <= 0 || attended > total || target <= 0 || target > 100) {\n      result.innerHTML = \"⚠️ Invalid input — thoda sahi daal 😅\";\n      return;\n    }\n\n    const current = (attended / total) * 100;\n    let html = `Current Attendance: <strong>${current.toFixed(2)}%</strong><br>`;\n\n    if (current >= target) {\n      html += `✅ Target achieved! Ab shaanti se bunk maar 😎`;\n    } else {\n      const required = Math.ceil((target * total - 100 * attended) / (100 - target));\n      html += `🎯 Required Classes: <strong>${required}</strong><br>Attend kar warna shortage lagegi 😭`;\n    }\n\n    result.innerHTML = html;\n  });\n});\n</script>",
+            "author": {
+                "name": "Mohan R"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-11-24T21:16:09+05:30",
+            "date_modified": "2025-11-24T21:17:41+05:30"
+        },
+        {
             "id": "https://desifactjungle.pages.dev/attendance-calculator-2.html",
             "url": "https://desifactjungle.pages.dev/attendance-calculator-2.html",
             "title": "Attendance Calculator — Check Current &amp; Required Attendance Online",
@@ -22,7 +36,7 @@
                    "Tools &amp; Calculators"
             ],
             "date_published": "2025-11-24T21:08:11+05:30",
-            "date_modified": "2025-11-24T21:11:05+05:30"
+            "date_modified": "2025-11-24T21:15:33+05:30"
         },
         {
             "id": "https://desifactjungle.pages.dev/daily-luck-calculator.html",
@@ -143,21 +157,6 @@
             ],
             "date_published": "2025-11-22T14:10:45+05:30",
             "date_modified": "2025-11-22T14:11:06+05:30"
-        },
-        {
-            "id": "https://desifactjungle.pages.dev/attendance-calculator.html",
-            "url": "https://desifactjungle.pages.dev/attendance-calculator.html",
-            "title": "Calculate your attendance %, required classes, safe bunk days &amp; predicted percentage.",
-            "summary": "Ultimate Attendance Calculator (India) Calculate your attendance %, required classes, safe bunk days & predicted percentage. &lt;script&gt; document.addEventListener(\"DOMContentLoaded\", function(){ function clamp(v,min,max){ return Math.max(min, Math.min(max, v)); } function runCalc(){ const total = Number(att_total.value || 0); const attended = Number(att_attended.value || 0); const req = Number(att_required.value ||&hellip;",
-            "content_html": "<div><div class=\"attend-wrap\">\n  <div class=\"attend-card\">\n    <h1>Ultimate Attendance Calculator (India)</h1>\n    <p class=\"attend-lead\">\n      Calculate your attendance %, required classes, safe bunk days & predicted percentage.\n    </p>\n\n    <div class=\"attend-grid\">\n\n      <div class=\"attend-inputs\">\n        <label>Total classes held</label>\n        <input id=\"att_total\" type=\"number\" value=\"60\">\n\n        <label>Classes attended</label>\n        <input id=\"att_attended\" type=\"number\" value=\"42\">\n\n        <label>Required percentage</label>\n        <input id=\"att_required\" type=\"number\" value=\"75\">\n\n        <label>Future classes planned</label>\n        <input id=\"att_future\" type=\"number\" value=\"20\">\n\n        <label>Planned absences</label>\n        <input id=\"att_plannedAbs\" type=\"number\" value=\"2\">\n\n        <div class=\"attend-buttons\">\n          <button id=\"att_calcBtn\" class=\"att-btn-primary\">Calculate</button>\n          <button id=\"att_resetBtn\" class=\"att-btn-secondary\">Reset</button>\n        </div>\n      </div>\n\n      <div class=\"attend-output-card\">\n        <div class=\"att-small-label\">Current Attendance</div>\n        <div id=\"att_curPercent\" class=\"att-big\">0%</div>\n\n        <div class=\"att-small-label\">Classes needed</div>\n        <div id=\"att_classesNeeded\" class=\"att-kpi-value\">—</div>\n\n        <div class=\"att-small-label\">You can miss now</div>\n        <div id=\"att_canMiss\" class=\"att-kpi-value\">—</div>\n\n        <div class=\"att-small-label\">Predicted attendance %</div>\n        <div id=\"att_predicted\" class=\"att-kpi-value\">—</div>\n\n        <div class=\"att-small-label\">Future bunks allowed</div>\n        <div id=\"att_futureMiss\" class=\"att-kpi-value\">—</div>\n      </div>\n\n    </div>\n  </div>\n</div>\n</div>\n<pre class=\"line-numbers  language-html\"><code>&lt;script&gt;\ndocument.addEventListener(\"DOMContentLoaded\", function(){\n\n  function clamp(v,min,max){ return Math.max(min, Math.min(max, v)); }\n\n  function runCalc(){\n    const total = Number(att_total.value || 0);\n    const attended = Number(att_attended.value || 0);\n    const req = Number(att_required.value || 0)/100;\n    const future = Number(att_future.value || 0);\n    const abs = Number(att_plannedAbs.value || 0);\n\n    if(total &lt;= 0){ att_curPercent.textContent = \"—\"; return; }\n\n    const cur = (attended/total) * 100;\n    att_curPercent.textContent = cur.toFixed(1) + \"%\";\n\n    let need = Math.ceil((req*total - attended) / (1-req));\n    if(need &lt; 0) need = 0;\n    att_classesNeeded.textContent = need;\n\n    let miss = Math.floor((attended - req*total)/req);\n    if(miss &lt; 0) miss = 0;\n    att_canMiss.textContent = miss;\n\n    const after = ((attended + (future-abs)) / (total+future)) * 100;\n    att_predicted.textContent = after.toFixed(1) + \"%\";\n\n    let fut = Math.floor(attended + future - req*(total+future));\n    if(fut &lt; 0) fut = 0;\n    att_futureMiss.textContent = fut;\n  }\n\n  function resetCalc(){\n    att_total.value = 60;\n    att_attended.value = 42;\n    att_required.value = 75;\n    att_future.value = 20;\n    att_plannedAbs.value = 2;\n    runCalc();\n  }\n\n  att_calcBtn.addEventListener(\"click\", runCalc);\n  att_resetBtn.addEventListener(\"click\", resetCalc);\n\n  runCalc();\n});\n&lt;/script&gt;\n</code></pre>\n<pre class=\"line-numbers  language-html\"><code></code></pre>",
-            "author": {
-                "name": "Mohan R"
-            },
-            "tags": [
-                   "Tools &amp; Calculators"
-            ],
-            "date_published": "2025-11-22T13:49:09+05:30",
-            "date_modified": "2025-11-22T14:09:23+05:30"
         }
     ]
 }
