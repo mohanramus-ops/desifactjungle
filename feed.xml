@@ -3,7 +3,7 @@
     <title>Monto Fact Jungle</title>
     <link href="https://desifactjungle.pages.dev/feed.xml" rel="self" />
     <link href="https://desifactjungle.pages.dev" />
-    <updated>2025-12-03T00:18:34+05:30</updated>
+    <updated>2025-12-03T00:34:03+05:30</updated>
     <author>
         <name>Mohan R</name>
     </author>
@@ -242,6 +242,7 @@
 <hr data-start="5517" data-end="5520">
 <h2 data-start="5522" data-end="5559"><strong data-start="5525" data-end="5559">(Short Version)</strong></h2>
 <p data-start="5560" data-end="6026">“Namaste doston! Aaj hum samjhenge Directive Principles aur Fundamental Rights mein simple difference. Fundamental Rights citizen ko legal protection dete hain, jabki Directive Principles government ke liye guidelines hain. Rights enforce ho sakte hain, lekin directives nahi. Example ke liye — Right to Education ek Fundamental Right hai, par education system improve karna ek Directive Principle hai. Video end tak aapko dono ka clear difference samajh aa jayega.”</p>
+<p data-start="5560" data-end="6026">Related Articles:<br>• <a href="https://desifactjungle.pages.dev/article-19-meaning-in-hindi/">Article 19 Meaning in Hindi</a><br>•<a href="#INTERNAL_LINK#/post/null"> Article 21 Meaning in Hindi</a><br>• <a href="https://desifactjungle.pages.dev/fundamental-duties-meaning-in-hindi/">Fundamental Duties Meaning</a><br>• <a href="https://desifactjungle.pages.dev/article-22-meaning-in-hindi/">Article 22 Meaning in Hindi </a><br>• <a href="https://desifactjungle.pages.dev/directive-principles-and-fundamental-rights-difference-in-hindi/">DPSP Meaning in Hindi</a></p>
 <hr data-start="6028" data-end="6031">
 <ul data-start="6069" data-end="6259">
 <li data-start="6069" data-end="6108">
@@ -1162,7 +1163,56 @@
 <p data-start="3302" data-end="3335">FR + legal rights → Article 226</p>
 </li>
 </ul>
+<p>Related Articles:<br>• <a href="https://desifactjungle.pages.dev/fundamental-duties-meaning-in-hindi/">Fundamental Duties Meaning</a><br>• <a href="https://desifactjungle.pages.dev/article-22-meaning-in-hindi/">Article 22 Meaning in Hindi </a><br>• <a href="https://desifactjungle.pages.dev/directive-principles-meaning-in-hindi/">DPSP Meaning in Hindi</a></p>
 <h1 data-start="3342" data-end="3386"> </h1>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Writs ka meaning Hindi me kya hota hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Writs का अर्थ एक विशेष न्यायिक आदेश होता है जिसे उच्च न्यायालय या सर्वोच्च न्यायालय किसी अधिकार की रक्षा के लिए जारी करते हैं।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "भारत में Writs ka prayog kisliye hota hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "भारत में Writs का उपयोग नागरिकों के मौलिक अधिकारों की रक्षा करने, किसी सरकारी कार्रवाई की जांच करने, या किसी व्यक्ति को न्याय दिलाने के लिए किया जाता है।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "भारतीय संविधान में कुल कितने Writs हैं?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "भारतीय संविधान में कुल पाँच प्रकार की Writs हैं: हैबियस कॉर्पस, मेंडेमस, प्रोहिबिशन, सर्टियोरारी और क्वो वारंटो।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Habeas Corpus writ kya hoti hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Habeas Corpus वह Writ है जिसके माध्यम से कोर्ट किसी अवैध रूप से गिरफ्तार व्यक्ति की तुरंत पेशी और रिहाई का आदेश देती है।"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Mandamus writ kab issue hoti hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mandamus तब जारी होती है जब कोई सरकारी अधिकारी या संस्था अपने कानूनी कर्तव्य का पालन नहीं कर रही हो। कोर्ट उन्हें कर्तव्य निभाने का आदेश देती है।"
+      }
+    }
+  ]
+}
+</script>
             ]]>
         </content>
     </entry>
