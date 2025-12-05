@@ -27,4 +27,5 @@ Allow: /
 
 # --- CORRECT SITEMAP URL ---
 
-Sitemap: https://desifactjungle.pages.dev/sitemap.xml
+Sitemap: https://montofactjungle.com/sitemap.xml
+
